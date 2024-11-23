@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifelights - Yearly Highlights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recap.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="lifelights.html" class="home-btn">Home</a>
+        <nav class="year-nav">
+            <ul class="year-list">
+                <!-- Year list items -->
+                <li class="year" data-year="2003">2003</li>
+                <li class="year" data-year="2004">2004</li>
+                <li class="year" data-year="2005">2005</li>
+                <li class="year" data-year="2006">2006</li>
+                <li class="year" data-year="2007">2007</li>
+                <li class="year" data-year="2008">2008</li>
+                <li class="year" data-year="2009">2009</li>
+                <li class="year" data-year="2010">2010</li>
+                <li class="year" data-year="2011">2011</li>
+                <li class="year" data-year="2012">2012</li>
+                <li class="year" data-year="2013">2013</li>
+                <li class="year" data-year="2014">2014</li>
+                <li class="year" data-year="2015">2015</li>
+                <li class="year" data-year="2016">2016</li>
+                <li class="year" data-year="2017">2017</li>
+                <li class="year" data-year="2018">2018</li>
+                <li class="year" data-year="2019">2019</li>
+                <li class="year" data-year="2020">2020</li>
+                <li class="year" data-year="2021">2021</li>
+                <li class="year" data-year="2022">2022</li>
+                <li class="year" data-year="2023">2023</li>
+                <li class="year" data-year="2024">2024</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="canvas-container">
+        <div class="canvas-header">
+            <span id="year-title">Select a year</span>
+        </div>
+        <div class="canvas">
+            <div class="year-label" id="year-label"></div>
+            <div id="text-content" class="text-content"></div>
+            <div id="image-content" class="image-content"></div>
+        </div>
+    </main>
+
+    <script src="recap.js"></script>
+
+    <!-- Add script to toggle dropdown -->
+    <script>
+        // Dropdown toggle functionality
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        dropdownBtn.addEventListener('click', () => {
+            // Toggle visibility of dropdown menu
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

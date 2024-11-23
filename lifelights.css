@@ -1,0 +1,137 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Lexend', sans-serif;
+    background: linear-gradient(135deg, #ffbd98, #ff91c1);
+    color: #333;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* "Let's Recap!" button */
+#start-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #ffbd98;
+    transform: scale(1.05);
+}
+
+#start-btn:active {
+    transform: scale(1);
+}
+
+/* Hamburger button styling */
+.dropdown {
+    position: absolute; /* Position the button relative to the page */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+.dropdown-btn {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.dropdown-btn:hover {
+    background-color: #ff758f;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.dropdown-btn:active {
+    transform: scale(1);
+}
+
+/* Initially hidden dropdown menu */
+.hidden {
+    display: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    text-align: left;
+    padding: 10px 0;
+    opacity: 1;
+    transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ff91c1;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

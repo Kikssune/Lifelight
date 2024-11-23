@@ -1,0 +1,94 @@
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Lexend', sans-serif;
+    background: linear-gradient(135deg, #ffbd98, #ff91c1);
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Section Styling */
+main section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+main section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff758f;
+}
+
+main section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Back to Home Button */
+#home-btn {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+#home-btn:hover {
+    background-color: #ff758f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

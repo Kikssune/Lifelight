@@ -1,0 +1,156 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Lexend', sans-serif;
+    background: linear-gradient(135deg, #ffbd98, #ff91c1); /* Gradient background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Back Button */
+.back-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-btn:hover {
+    background-color: #ff758f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Main Container */
+.info-container {
+    display: flex;
+    flex-direction: column; /* Changed to column */
+    align-items: center;
+    background-color: transparent; /* No background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: none; /* Removed the shadow */
+    width: 100%;
+    max-width: 600px; /* Adjusted width for cleaner layout */
+    text-align: center;
+}
+
+/* Photo Area */
+.photo-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Added space between image and text */
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    height: auto; /* Ensures proper aspect ratio */
+    border-radius: 10px; /* Rectangular shape */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Info Area */
+.details-area {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff; /* White divider line */
+    padding: 10px 0;
+}
+
+.label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff; /* White text for labels */
+    text-align: left;
+}
+
+.placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff; /* White text for placeholders */
+    text-align: right;
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Social Links Container */
+.social-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between links */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Social Media Links */
+.social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+    background-color: #ff758f; /* Hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Optional: Adding a title under the icons */
+.social-links-container p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}

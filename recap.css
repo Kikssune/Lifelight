@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lexend', sans-serif;
+    background: linear-gradient(135deg, #ffbd98, #ff91c1);
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px; /* Halved the padding */
+    width: 50%; /* Body is 2x smaller */
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Halved the max width */
+    background-color: #fff;
+    padding: 5px 10px; /* Reduced padding */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Reduced shadow for smaller layout */
+    position: relative;
+    margin-bottom: 10px; /* Space below header */
+}
+
+/* Home Button Styling */
+.home-btn {
+    text-decoration: none;
+    font-size: 0.8rem; /* Reduced font size */
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px; /* Reduced padding */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px; /* Reduced margin */
+}
+
+.home-btn:hover {
+    background-color: #ff758f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.home-btn:active {
+    transform: scale(1);
+}
+
+/* Year Navigation */
+.year-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduced gap */
+    justify-content: flex-start;
+}
+
+/* Year List Styling */
+.year-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduced gap */
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Year Styling */
+.year {
+    cursor: pointer;
+    font-size: 0.8rem; /* Reduced font size */
+    font-weight: 600;
+    color: #555;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.year:hover {
+    color: #007BFF;
+}
+
+.year.active {
+    color: #007BFF;
+    font-weight: 700;
+    border-bottom: 3px solid #007BFF;
+}
+
+/* Main Content Area */
+.canvas-container {
+    width: 100%;
+    max-width: 625px; /* Reduced max-width */
+}
+
+/* Canvas Styling */
+.canvas {
+    background-color: #fff;
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px; /* Reduced border radius */
+    width: 100%;
+    max-width: 575px; /* Reduced max-width */
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+.canvas-header {
+    font-size: 1.2rem; /* Reduced font size */
+    margin-bottom: 3px; /* Reduced margin */
+    color: #fff;
+}
+
+.text-content {
+    margin: 10px;
+    font-size: 1rem; /* Reduced font size */
+    color: #333;
+    text-align: center;
+}
+
+/* Image content: Original size */
+.image-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px; /* Reduced gap */
+    margin: 5px auto; /* Reduced margin */
+    max-width: 575px; /* Reduced max-width */
+}
+
+.image-content img {
+    width: auto; /* Retain original size of images */
+    max-width: 50%; /* Reduced size of images */
+    margin: 0;
+    display: block;
+    border-radius: 5px; /* Reduced border radius */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}

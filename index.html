@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifelights</title>
+    <link rel="stylesheet" href="lifelights.css"> <!-- Ensure CSS file path is correct -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Lifelights</h1>
+        <p>Highlights of my life</p>
+    </header>
+
+    <main>
+        <!-- Button to redirect to recap.html -->
+        <button id="start-btn">Let's Recap!</button>
+    </main>
+
+    <!-- Hamburger Button Container -->
+    <div class="dropdown">
+        <!-- Hamburger button hidden by default -->
+        <button class="dropdown-btn hidden">☰</button>
+        <div class="dropdown-menu hidden"> <!-- Dropdown menu -->
+            <a href="about.html">About</a>
+            <a href="codersinfo.html">Coder Info</a>
+        </div>
+    </div>
+
+    <!-- JavaScript functionality -->
+    <script>
+        // Handle "Let's Recap!" button redirection
+        document.getElementById('start-btn').addEventListener('click', function () {
+            window.location.href = 'recap.html'; // Replace with your recap page's path
+        });
+
+        // Toggle dropdown menu visibility
+        const hamburgerButton = document.querySelector('.dropdown-btn');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        hamburgerButton.classList.remove('hidden'); // Initially show the hamburger button
+
+        hamburgerButton.addEventListener('click', function () {
+            dropdownMenu.classList.toggle('hidden'); // Show/hide dropdown menu
+        });
+    </script>
+</body>
+</html>
